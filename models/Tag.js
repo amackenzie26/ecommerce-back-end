@@ -6,7 +6,24 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
+    id: {
+      isInt: true,    
+      notNull: true,
+      primaryKey: true,
+      autoIncrement: true 
+    }
+  },
+  {
+    product_id: {
+      isInt: true,    
+      //references the product models id
+    }
+  },
+  {
+    tag_id: {
+      isInt: true,    
+      // references the tag model's id
+    }
   },
   {
     sequelize,
