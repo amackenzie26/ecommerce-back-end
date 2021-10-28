@@ -7,23 +7,28 @@ class Tag extends Model {}
 Tag.init(
   {
     id: {
-      isInt: true,    
-      notNull: true,
+      type: DataTypes.INTEGER,       
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true 
     }
   },
   {
     product_id: {
-      isInt: true,    
-      //references the product models id
+        type: DataTypes.INTEGER,       
+        references: {
+          model: 'product',
+          key: 'id',
+        }
     }
   },
   {
     tag_id: {
-      isInt: true,    
-      // references the tag model's id
-    }
+        type: DataTypes.INTEGER,       
+        references: {
+          model: 'tag',
+          key: 'id',
+        }
   },
   {
     sequelize,
