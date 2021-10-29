@@ -14,7 +14,7 @@
   9. Turn the server on using node server.js
   # [Usage](#usage)
   See Installation above.
-  Use Insomnia to check for functionality of Get, Post, Put, and Delete capabilities.
+  Use Insomnia to test Get, Post, Put, and Delete capabilities.
   # [Built With](#built)
   MySQL2, Sequelize, Express.js API, Dotenv
   # [Author](#author)
@@ -25,4 +25,4 @@
   # [License](#license)
   MIT
   # [Credits] (#credits)
-  BCB Staff, Google, stackoverflow.com
+  BCB Staff, Google, stackoverflow.com, Insomnia
